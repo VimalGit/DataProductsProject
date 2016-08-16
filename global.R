@@ -8,7 +8,7 @@ getTermMatrix <- function(inputText) {
   my_corpus = Corpus(VectorSource(inputText))
   my_corpus = tm_map(my_corpus, content_transformer(tolower))
   my_corpus = tm_map(my_corpus, removePunctuation)
-  my_corpus = tm_map(my_corpus, removeWords,c(stopwords("SMART"), "the", "and", "are"))
+  my_corpus = tm_map(my_corpus, removeWords,c("the", "and", "are"))
   
   my_TDM = TermDocumentMatrix(my_corpus,
                              control = list(minWordLength = 1))

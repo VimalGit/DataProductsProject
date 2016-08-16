@@ -1,3 +1,4 @@
+library(shiny)
 
 textareaInput <- function(inputID, label, value="Sample Text", rows=10, columns=40) {
   HTML(paste0('<div class="form-group shiny-input-container">
@@ -6,7 +7,8 @@ textareaInput <- function(inputID, label, value="Sample Text", rows=10, columns=
               columns,'">', value, '</textarea></div>'))
 }
 
-fluidPage(
+shinyUI(
+  fluidPage(
   # Title
   titlePanel("Course Project - Word Cloud"),
   h4("Vimal Natarajan"),  
@@ -14,7 +16,7 @@ fluidPage(
     sidebarPanel(
       textareaInput("inputText", "Input Text"),
       hr(),
-      sliderInput("frequency",       "Minimum Frequency:", min = 1,  max = 50, value = 15),
+      sliderInput("frequency",  "Minimum Frequency:", min = 1,  max = 50, value = 15),
       sliderInput("max_words",  "Maximum Number of Words:", min = 1,  max = 300,  value = 100)
     ),
     
@@ -24,4 +26,4 @@ fluidPage(
     )
   )
 )
-
+)
