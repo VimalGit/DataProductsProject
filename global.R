@@ -11,7 +11,8 @@ getTermMatrix <- function(inputText) {
   my_corpus = tm_map(my_corpus, removeWords,c("the", "and", "are"))
   
   my_TDM = TermDocumentMatrix(my_corpus,
-                             control = list(minWordLength = 1))
+                             control = list(wordLengths=c(1,12))
+                             )
   
   TDM_matrix = as.matrix(my_TDM)
   
