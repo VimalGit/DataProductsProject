@@ -1,4 +1,8 @@
-# DataProductsProject
+# Word Cloud
+
+## Course Project for the module Data Products in Johns Hopkins University Data Science Specialization
+author: Vimal Natarajan
+date: August 20, 2016
 
 ## Word Cloud Executive Summary
 
