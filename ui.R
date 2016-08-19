@@ -17,8 +17,7 @@ We're going to live on!
 We're going to survive!
 Today, we celebrate our Independence Day!  
 "
-  
-  
+
   HTML(paste0('<div class="form-group shiny-input-container">
               <label for="', inputID, '">', label,'</label>
               <textarea id="', inputID, '" rows="', rows,'" cols="', 
