@@ -10,8 +10,9 @@ textareaInput <- function(inputID, label, value="Sample Text", rows=10, columns=
 shinyUI(
   fluidPage(
   # Title
-  titlePanel("Course Project - Word Cloud"),
+  titlePanel("Project - Word Cloud"),
   h4("Vimal Natarajan"),  
+  h5("August 20, 2016"),
   sidebarLayout(
     # Visualize in Word Cloud
     mainPanel(
@@ -29,9 +30,10 @@ shinyUI(
         tabPanel (
           "Documentation",
           helpText("Input Text: Use this text area to enter words, sentences, paragraph etc. 
-                   The words are delimited by spaces.
-                   Punctuation is removed. Few common words are removed. Current common words removed are 'and', 'the', 'are'.
-                   The minimum word length is 1 and the maximum word length is 12. Any word that is more than length 15 will not be displayed."
+                   The words are delimited by spaces. 
+                   You may also copy and paste text from news articles. 
+                   Punctuation is removed. Few common words(e.g. and, the, is etc.) are removed.
+                   The minimum word length is 1 and the maximum word length is 12. Any word that is more than length 12 will not be displayed."
                    ),
           helpText("Minimum Frequency: Words with frequency below this value will not be displayed."
           ),
