@@ -6,7 +6,7 @@ autosize: true
 
 <small>
 <BR>
-Course Project for the module Data Products in Johns Hopkins University Data Science Specialization
+Project for the module Data Products in Johns Hopkins University Data Science Specialization Course
 <BR>
 </small>
 

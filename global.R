@@ -1,7 +1,6 @@
 library(tm)
 library(wordcloud)
 
-# Using "memoise" to automatically cache the results
 getTermMatrix <- function(inputText) {
 
   my_corpus = Corpus(VectorSource(inputText))

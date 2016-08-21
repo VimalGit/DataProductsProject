@@ -2,7 +2,7 @@ library(shiny)
 
 shinyServer(
 function(input, output) {
-  # Reactive expression for document term matrix
+  # Reactive expression for the document term matrix
   terms <- reactive({
         getTermMatrix(input$inputText)
   })

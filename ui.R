@@ -2,7 +2,7 @@ library(shiny)
 
 textareaInput <- function(inputID, label, rows=10, columns=40) {
   
-  default_text <- "
+default_text <- "
 Good morning. In less than an hour, aircraft from here will join others from around the world. 
 And you will be launching the largest aerial battle in this history of mankind.
 Mankind -- that word should have new meaning for all of us today.
